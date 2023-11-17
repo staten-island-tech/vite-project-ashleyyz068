@@ -6,8 +6,13 @@
 // import viteLogo from '..public/vite.svg'
 // import { setupCounter } from '../counter.js'
 import "../styles/style.css"
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
+import { menu } from "./menu"; 
 document.querySelector('#app').innerHTML = `
 <h1>hello citee </h1> 
 `
 
-setupCounter(document.querySelector('#counter'))
+console.log(menu); 
