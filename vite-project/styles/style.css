@@ -29,3 +29,12 @@
   border-top-left-radius: 20px;
 
 }
+
+#container {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+
+}
