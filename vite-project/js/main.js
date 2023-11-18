@@ -12,10 +12,7 @@ AOS.init();
 import { menu } from "./menu"; 
 import { DOMSelectors } from "./Dom";
 
-DOMSelectors.form.addEventListener("submit", function (event) {
-    event.preventDefault();
-    button();
-});
+
 
 function milkTea (){
     const milk = menu.filter((menu)=> menu.type==="Milk Tea").map((menu)=> DOMSelectors.container.insertAdjacentHTML("beforeend",`
@@ -29,8 +26,10 @@ function milkTea (){
     );
     // .addEventListener('click', displayFilteredItems);
 }
-function button(){ 
-    DOMSelectors.milk.addEventListener(`click`,milkTea )
-}; 
+DOMSelectors.milk.addEventListener(`click`,milkTea )
+DOMSelectors.winter.addEventListener(`click`,milkTea )
 
+DOMSelectors.form.addEventListener("submit", function (event) {
+    event.preventDefault();
+});
 
