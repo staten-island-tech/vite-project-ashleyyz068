@@ -32,6 +32,30 @@ const menu = [
     inStock: false,
     type: `Milk Tea`
   },
+  {
+    name: `STRAWBERRY MATCHA LATTE`,
+    boba: false,
+    price: 7.25,
+    image:"https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_150,q_auto:low,fl_lossy,dpr_2.0,c_fill,f_auto,h_130/mvsi6wuskharqkea9fl6",
+    inStock: true,
+    type: `Milk Tea`
+  },
+  {
+    name: `HOJICHA LATTE`,
+    boba: false,
+    price: 7.25,
+    image:"https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_150,q_auto:low,fl_lossy,dpr_2.0,c_fill,f_auto,h_130/ao2kekvd0orkpjty8kud",
+    inStock: true,
+    type: `Milk Tea`
+  },
+  {
+    name: `GLUTINOUS RICE MILLK TEA`,
+    boba: false,
+    price: 7.25,
+    image:"https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_150,q_auto:low,fl_lossy,dpr_2.0,c_fill,f_auto,h_130/j6uhizsp3gepeiyngutz",
+    inStock: true,
+    type: `Milk Tea`
+  },
   //=====Winter Limited====
   {
     name: `OATSOME BOBA MILK TEA`,

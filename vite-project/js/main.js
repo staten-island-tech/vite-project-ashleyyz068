@@ -12,9 +12,12 @@ AOS.init();
 import { menu } from "./menu"; 
 import { DOMSelectors } from "./Dom";
 
-
+function remove (){
+    DOMSelectors.container.forEach((menu) => menu.remove());
+}
 
 function milkTea (){
+    // remove (); 
     const milk = menu.filter((menu)=> menu.type==="Milk Tea").map((menu)=> DOMSelectors.container.insertAdjacentHTML("beforeend",`
     <div class="card">
           <img class="card-img" src="${menu.image}" alt="">
