@@ -17,7 +17,7 @@ function remove (){
 }
 
 function milkTea (){
-    // remove (); 
+    remove (); 
     const milk = menu.filter((menu)=> menu.type==="Milk Tea").map((menu)=> DOMSelectors.container.insertAdjacentHTML("beforeend",`
     <div class="card">
           <img class="card-img" src="${menu.image}" alt="">
@@ -25,12 +25,12 @@ function milkTea (){
             <p> ${menu.price}</p>
         </div>
     `)
-
     );
     // .addEventListener('click', displayFilteredItems);
 }
 DOMSelectors.milk.addEventListener(`click`,milkTea )
 DOMSelectors.winter.addEventListener(`click`,milkTea )
+
 
 DOMSelectors.form.addEventListener("submit", function (event) {
     event.preventDefault();
