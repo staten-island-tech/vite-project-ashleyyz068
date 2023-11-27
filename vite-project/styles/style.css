@@ -10,7 +10,7 @@
 }
 .card {
   height: 50vh;
-  width: 15vw;
+  width: 18vw;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -22,7 +22,7 @@
   transition: all 0.3s;
 }
 .card-img{
-  height: 75%;
+  height: 50%;
   width: 100%;
   overflow: hidden;
   border-top-right-radius: 20px;
@@ -37,4 +37,7 @@
   margin-top: 3rem;
   margin-bottom: 3rem;
 
+}
+.des{
+  margin-top: 20%;
 }

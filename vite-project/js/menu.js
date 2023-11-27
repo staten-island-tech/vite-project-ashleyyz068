@@ -33,7 +33,7 @@ const menu = [
     type: `Milk Tea`
   },
   {
-    name: `STRAWBERRY MATCHA LATTE`,
+    name: `STRAWBERRY LATTE`,
     boba: false,
     price: 7.25,
     image:"https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_150,q_auto:low,fl_lossy,dpr_2.0,c_fill,f_auto,h_130/mvsi6wuskharqkea9fl6",
@@ -124,7 +124,7 @@ const menu = [
   },
   //======specials
   {
-    name: `DEWY GRAPE N' LIME`,
+    name: `DEWY GRAPE LIME`,
     boba: false,
     price: 8.25,
     image:"https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_115,q_auto:low,fl_lossy,dpr_2.0,c_fill,f_auto,h_123/wr2bjkllaqxt5zbddpex",

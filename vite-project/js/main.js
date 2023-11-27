@@ -20,36 +20,38 @@ function clearCards() {
     const container = DOMSelectors.container;
     container.innerHTML = '';
   }
-function milkTea (){
-    clearCards(); 
-    const milk = menu.filter((menu)=> menu.type==="Milk Tea").map((menu)=> DOMSelectors.container.insertAdjacentHTML("beforeend",`
+
+function insert (arr){
+    arr.map((menu)=> DOMSelectors.container.insertAdjacentHTML("beforeend",`
     <div class="card">
           <img class="card-img" src="${menu.image}" alt="">
-            <h2> ${menu.name}</h2>
+            <div class="des"> ${menu.name}</div>
             <p> ${menu.price}</p>
         </div>
     `)
     );
-    // .addEventListener('click', displayFilteredItems);
-}
+};
 
-function winter (){
+DOMSelectors.milk.addEventListener(`click`, function (){
     clearCards(); 
-    const milk = menu.filter((menu)=> menu.type==="Winter Limited").map((menu)=> DOMSelectors.container.insertAdjacentHTML("beforeend",`
-    <div class="card">
-          <img class="card-img" src="${menu.image}" alt="">
-            <h2> ${menu.name}</h2>
-            <p> ${menu.price}</p>
-        </div>
-    `)
-    );
-    // .addEventListener('click', displayFilteredItems);
-}
-
-
-
-DOMSelectors.milk.addEventListener(`click`,milkTea)
-DOMSelectors.winter.addEventListener(`click`,winter )
+    const milk = menu.filter((menu)=> menu.type==="Milk Tea")
+    insert (milk); 
+})
+DOMSelectors.winter.addEventListener(`click`,function (){
+    clearCards(); 
+    const winter = menu.filter((menu)=> menu.type==="Winter Limited")
+    insert (winter); 
+ })
+DOMSelectors.fall.addEventListener(`click`,function (){
+    clearCards(); 
+    const fall = menu.filter((menu)=> menu.type==="Fall Limited")
+    insert (fall); 
+ })
+DOMSelectors.specials.addEventListener(`click`,function (){
+    clearCards(); 
+    const specials = menu.filter((menu)=> menu.type==="Specials")
+    insert (specials); 
+ })
 
 
 DOMSelectors.form.addEventListener("submit", function (event) {
