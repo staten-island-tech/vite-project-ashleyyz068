@@ -6,18 +6,22 @@
 // import viteLogo from '..public/vite.svg'
 // import { setupCounter } from '../counter.js'
 import "../styles/style.css"
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
-AOS.init();
+// import AOS from 'aos';
+// import 'aos/dist/aos.css'; // You can also use <link> for styles
+// AOS.init();
 import { menu } from "./menu"; 
 import { DOMSelectors } from "./Dom";
 
-function remove (){
-    DOMSelectors.container.forEach((menu) => menu.remove());
-}
-
+// function remove () {
+//     document.querySelectorAll("#container")
+//     .forEach((vinyl) => vinyl.remove());
+//   };
+function clearCards() {
+    const container = DOMSelectors.container;
+    container.innerHTML = '';
+  }
 function milkTea (){
-    remove (); 
+    clearCards(); 
     const milk = menu.filter((menu)=> menu.type==="Milk Tea").map((menu)=> DOMSelectors.container.insertAdjacentHTML("beforeend",`
     <div class="card">
           <img class="card-img" src="${menu.image}" alt="">
@@ -28,8 +32,24 @@ function milkTea (){
     );
     // .addEventListener('click', displayFilteredItems);
 }
-DOMSelectors.milk.addEventListener(`click`,milkTea )
-DOMSelectors.winter.addEventListener(`click`,milkTea )
+
+function winter (){
+    clearCards(); 
+    const milk = menu.filter((menu)=> menu.type==="Winter Limited").map((menu)=> DOMSelectors.container.insertAdjacentHTML("beforeend",`
+    <div class="card">
+          <img class="card-img" src="${menu.image}" alt="">
+            <h2> ${menu.name}</h2>
+            <p> ${menu.price}</p>
+        </div>
+    `)
+    );
+    // .addEventListener('click', displayFilteredItems);
+}
+
+
+
+DOMSelectors.milk.addEventListener(`click`,milkTea)
+DOMSelectors.winter.addEventListener(`click`,winter )
 
 
 DOMSelectors.form.addEventListener("submit", function (event) {
