@@ -1,13 +1,61 @@
 body{
-    background-color: blueviolet;
-    background-image: url("https://i.ytimg.com/vi/on9BTX6dHN0/maxresdefault.jpg");
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    text-align: center;
-    margin: 3rem;
+
+:root{
+    --light-blue: blue; 
+    --dark-blue: #135cc5; 
+    --light-red: red;
+    --dark-red: pink; 
+    --primary: var(--light-blue); 
+    --secondary: var(--dark-blue)
+}
+.custom{
+    background-color: var(--primary);
+}
+.div1{
+    background-color: var(--secondary);
+}
+.cool{
+    --primary: var(--light-blue);
+    --secondary: var(--dark-blue)
+}
+.warm{
+    --primary: var(--dark-red);
+    --secondary: var(--light-red)
+}
+
+/* Buttons CSS */
+.button-56 {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-56:hover {
+  background-color: #fff;
+}
+
+.button-56:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-56 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
 }
