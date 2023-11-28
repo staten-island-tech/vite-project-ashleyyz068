@@ -58,3 +58,7 @@ DOMSelectors.form.addEventListener("submit", function (event) {
     event.preventDefault();
 });
 
+DOMSelectors.btnCool.addEventListener("click", function(){
+    if(documnet.body.classlist.contains("warm")){
+
+    }}); 

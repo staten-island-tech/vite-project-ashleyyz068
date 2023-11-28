@@ -5,5 +5,7 @@ const DOMSelectors = {
     winter: document.getElementById("winter"), 
     fall: document.getElementById("fall"),
     specials: document.getElementById("specials"),
+    btnCool: document.getElementById("btnCool"),
+    
 }
 export {DOMSelectors}
