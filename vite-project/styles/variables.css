@@ -1,61 +1,41 @@
-body{
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
 }
-
 :root{
-    --light-blue: blue; 
-    --dark-blue: #135cc5; 
-    --light-red: red;
-    --dark-red: pink; 
-    --primary: var(--light-blue); 
-    --secondary: var(--dark-blue)
+    --light-yellow: #ede87e; 
+    --orange: #f5bf49; 
+    --light-blue: #cbe0f5;
+    --light-blue-card: lightblue;
+    --light-yellow-card: rgb(255, 251, 129); 
+    --pink: pink; 
+    --chris: url(https://img.freepik.com/premium-vector/seamless-christmas-pattern-with-trees-blue-background_429461-94.jpg); 
+    --thanks: url(https://img.freepik.com/free-vector/flat-pattern-design-fall-season-celebration_23-2150684383.jpg); 
 }
-.custom{
+.head-text{
     background-color: var(--primary);
 }
 .div1{
     background-color: var(--secondary);
-}
-.cool{
-    --primary: var(--light-blue);
-    --secondary: var(--dark-blue)
+
 }
 .warm{
-    --primary: var(--dark-red);
-    --secondary: var(--light-red)
+    --primary: var(--light-yellow);
+    --secondary: var(--orange); 
+    --image: var(--thanks); 
+    --card: var(--light-yellow-card)
 }
-
-/* Buttons CSS */
-.button-56 {
-  background-color: #fbeee0;
-  border: 2px solid #422800;
-  border-radius: 30px;
-  box-shadow: #422800 4px 4px 0 0;
-  color: #422800;
-  cursor: pointer;
-  display: inline-block;
-  font-weight: 600;
-  font-size: 18px;
-  padding: 0 18px;
-  line-height: 50px;
-  text-align: center;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+.chris{
+    --primary: var(--pink);
+    --secondary: var(--light-blue); 
+    --image: var(--chris); 
+    --card: var(--light-blue-card)
 }
-
-.button-56:hover {
-  background-color: #fff;
+.head{
+    background-image: var(--image);
 }
-
-.button-56:active {
-  box-shadow: #422800 2px 2px 0 0;
-  transform: translate(2px, 2px);
-}
-
-@media (min-width: 768px) {
-  .button-56 {
-    min-width: 120px;
-    padding: 0 25px;
-  }
+.card{
+    background-color: var(--card);
 }

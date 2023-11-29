@@ -1,21 +1,6 @@
-
-// import javascriptLogo from './javascript.svg'
-// import viteLogo from '/vite.svg'
-// import { setupCounter } from './counter.js'
-// import javascriptLogo from '../javascript.svg'
-// import viteLogo from '..public/vite.svg'
-// import { setupCounter } from '../counter.js'
 import "../styles/style.css"
-// import AOS from 'aos';
-// import 'aos/dist/aos.css'; // You can also use <link> for styles
-// AOS.init();
 import { menu } from "./menu"; 
 import { DOMSelectors } from "./Dom";
-
-// function remove () {
-//     document.querySelectorAll("#container")
-//     .forEach((vinyl) => vinyl.remove());
-//   };
 function clearCards() {
     const container = DOMSelectors.container;
     container.innerHTML = '';
@@ -26,7 +11,7 @@ function insert (arr){
     <div class="card">
           <img class="card-img" src="${menu.image}" alt="">
             <div class="des"> ${menu.name}</div>
-            <p> ${menu.price}</p>
+            <h2> ${menu.price}</h2>
         </div>
     `)
     );
@@ -58,7 +43,14 @@ DOMSelectors.form.addEventListener("submit", function (event) {
     event.preventDefault();
 });
 
-DOMSelectors.btnCool.addEventListener("click", function(){
-    if(documnet.body.classlist.contains("warm")){
 
-    }}); 
+    document.getElementById("theme").addEventListener("click", function() {
+        const body = document.body;
+        if (body.classList.contains("chris")) {
+          body.classList.remove("chris");
+          body.classList.add("warm");
+        } else {
+          body.classList.remove("warm");
+          body.classList.add("chris");
+        }
+      });

@@ -115,7 +115,7 @@ const menu = [
     type: `Fall Limited`
   },
   {
-    name: `BROWN SUGAR GINGER MILK TEA`,
+    name: `SUGAR GINGER MILK TEA`,
     boba: false,
     price: 7.5,
     image:"https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_115,q_auto:low,fl_lossy,dpr_2.0,c_fill,f_auto,h_123/d6sqj3uzybjh3ejv5ome",
