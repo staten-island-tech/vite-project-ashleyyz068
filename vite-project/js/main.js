@@ -5,7 +5,7 @@ function clearCards() {
     const container = DOMSelectors.container;
     container.innerHTML = '';
 }
-
+insert(menu)
 function insert(arr) {
     arr.map((menu) => DOMSelectors.container.insertAdjacentHTML("beforeend", `
     <div class="card">
@@ -40,3 +40,4 @@ document.getElementById("theme").addEventListener("click", function () {
 DOMSelectors.form.addEventListener("submit", function (event) {
     event.preventDefault();
 });
+
