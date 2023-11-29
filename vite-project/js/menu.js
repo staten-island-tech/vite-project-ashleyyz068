@@ -1,4 +1,3 @@
-
 const menu = [
   {
     name: `TRIO MILK TEA`,
