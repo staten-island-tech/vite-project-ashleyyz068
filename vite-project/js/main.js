@@ -26,18 +26,17 @@ buttons.forEach((buttons) => buttons.addEventListener("click",
         insert(array)
     }));
 
-document.getElementById("theme").addEventListener("click", function () {
-    const body = document.body;
-    if (body.classList.contains("chris")) {
-        body.classList.remove("chris");
-        body.classList.add("warm");
-    } else {
-        body.classList.remove("warm");
-        body.classList.add("chris");
-    }
-});
-
 DOMSelectors.form.addEventListener("submit", function (event) {
     event.preventDefault();
+});
+
+document.getElementById("theme").addEventListener("click", function () {
+    if (document.body.classList.contains("chris")) {
+        document.body.classList.remove("chris");
+        document.body.classList.add("warm");
+    } else {
+        document.body.classList.remove("warm");
+        document.body.classList.add("chris");
+    }
 });
 
